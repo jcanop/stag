@@ -25,11 +25,11 @@ stag -h
 
 ### Embed data into an image
 ```basg
-stag embed [OPTIONS] <INPUT\_IMAGE> <OUTPUT\_IMAGE>
+stag embed [OPTIONS] <INPUT_IMAGE> <OUTPUT_IMAGE>
 
 Arguments:
-  <INPUT\_IMAGE>   Input image
-  <OUTPUT\_IMAGE>  Output image
+  <INPUT_IMAGE>   Input image
+  <OUTPUT_IMAGE>  Output image
 
 Options:
   -i, --input <FILE>           Input filename
@@ -53,10 +53,10 @@ Even though these examples embed only text, you can embed any file format.
 
 ### Extract data from an image
 ```bash
-stag extract [OPTIONS] <INPU\T_IMAGE>
+stag extract [OPTIONS] <INPUT_IMAGE>
 
 Arguments:
-  <INPUT\_IMAGE>  Input image
+  <INPUT_IMAGE>  Input image
 
 Options:
   -o, --output <FILE>          Output filename
