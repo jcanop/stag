@@ -1,5 +1,5 @@
 <p align="center">
-    ![Stag Logo](images/logo.png)
+    <img src="iamges/logo.png" alt="Stag Logo" />
 </p>
 
 This command-line utility lets users embed and extract data from images using steganography. [Steganography](https://en.wikipedia.org/wiki/Steganography) is the practice of hiding a secret message, file, or image inside another ordinary, non-secret file or physical object to avoid detection; in this case, image files.
