@@ -1,2 +1,17 @@
+# Test data
 /data
+
+# Rust build files
 /target
+
+# vim temporal files
+*~
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
