@@ -1,4 +1,6 @@
-![Stag Logo](images/logo.png)
+<p align="center">
+    ![Stag Logo](images/logo.png)
+</p>
 
 This command-line utility lets users embed and extract data from images using steganography. [Steganography](https://en.wikipedia.org/wiki/Steganography) is the practice of hiding a secret message, file, or image inside another ordinary, non-secret file or physical object to avoid detection; in this case, image files.
 
@@ -10,19 +12,19 @@ This is a fun little project I built over a weekend, so there are some limitatio
 
 You will need the Rust compiler and the cargo utility to build this project.
 
-´´´
+```bash
 cargo build --release
-´´´
+```
 
 ## Usage
 
 ### Display help
-´´´
+```bash
 stag -h
-´´´
+```
 
 ### Embed data into an image
-´´´
+```basg
 stag embed [OPTIONS] <INPUT\_IMAGE> <OUTPUT\_IMAGE>
 
 Arguments:
@@ -33,10 +35,10 @@ Options:
   -i, --input <FILE>           Input filename
   -e, --encrypt                Encrypt input data
   -p, --password <PASSPHRASE>  Encryption password
-´´´
+```
 
 Examples:
-´´´
+```bash
 # The application will prompt the user for an input text and embed it into the input.jpg image file and write the result into output.png
 stag embed input.jpg output.png
 
@@ -45,12 +47,12 @@ stag embed --input message.txt input.jpg output.png
 
 # Embed and encrypt the message.txt file into the input.jpg image file and write the result into output.png
 stag embed --encrypt --input message.txt input.jpg output.png
-´´´
+```
 
 Even though these examples embed only text, you can embed any file format.
 
 ### Extract data from an image
-´´´
+```bash
 stag extract [OPTIONS] <INPU\T_IMAGE>
 
 Arguments:
@@ -60,14 +62,14 @@ Options:
   -o, --output <FILE>          Output filename
   -p, --password <PASSPHRASE>  Decrypt password
   -t, --text                   Display the output in the console
-´´´
+```
 
 Examples:
-´´´
+```bash
 # Extract the hidden message from input.png and display it in the console.
 stag extract --text input.png
 
 # Extract the hidden message from input.png and write it to output.txt.
 stag extract --output output.txt input.png
-´´´
+```
 
